@@ -2,4 +2,12 @@ function hello(name) {
     console.log('hello'+name);
 }
 
-console.log(window);// hello('FRZH')
+setTimeout(() => {
+    
+}, 500);
+clearTimeout();
+
+setInterval();
+clearInterval();
+
+globalThis.console.log("faraZ")
