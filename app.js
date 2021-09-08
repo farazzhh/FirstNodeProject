@@ -1,5 +1,9 @@
-var mdl = require('./stuff');
+var events = require('events');
 
-console.log(mdl.array([1,3]));
-console.log(mdl.adder(1,3));
-console.log(mdl.pi);
+var myEmitter = new EventSource.EventEmitter();
+
+myEmitter.on('someEvent', function (msg) {
+    console.log(msg);
+});
+
+myEmitter.emit('someEvent','the event was emitted')
