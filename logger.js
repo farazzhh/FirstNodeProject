@@ -1,8 +1,4 @@
-var url = 'http://farazzhh.ir/log';
-
-function log(message) {
-    // ssend a http request
-    console.log(message);
+var array = function (arr) {
+    return 'there are ' + arr.length;
 }
-
-module.exports.log = log;
+console.log(array([1,2,3,4]));

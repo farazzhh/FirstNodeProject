@@ -1,1 +1,3 @@
-console.log(module);
+var mdl = require('./logger');
+
+console.log(mdl);
